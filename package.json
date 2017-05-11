@@ -1,0 +1,30 @@
+{
+  "name": "associations-demo",
+  "version": "1.0.0",
+  "description": "Small app to practice using data sets that are associated with one another, such as users and comments. Edit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradenLawrence/associations-demo.git"
+  },
+  "keywords": [
+    "associations",
+    "database",
+    "mongo",
+    "mongoose",
+    "udemy",
+    "udemy-wdi"
+  ],
+  "author": "Braden Lawrence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BradenLawrence/associations-demo/issues"
+  },
+  "homepage": "https://github.com/BradenLawrence/associations-demo#readme",
+  "dependencies": {
+    "mongoose": "^4.9.8"
+  }
+}
