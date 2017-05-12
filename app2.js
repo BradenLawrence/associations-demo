@@ -2,24 +2,9 @@ var mongoose = require("mongoose")
 mongoose.Promise = global.Promise
 mongoose.connect("mongodb://localhost/references-demo")
 
+var Post = require("./models/post")
 
-// POST
-var postSchema = new mongoose.Schema({
-    title: String,
-    text: String
-})
-var Post = mongoose.model("Post", postSchema)
-
-// USER
-var userSchema = new mongoose.Schema({
-    name: String,
-    email: String,
-    posts: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Post"
-    }]
-})
-var User = mongoose.model("User", userSchema)
+var User = require("./models/user")
 
 // User.create({
 //         name: "Kenzie",
@@ -33,8 +18,8 @@ var User = mongoose.model("User", userSchema)
 // })
 
 // Post.create({
-//     title: "fdsfdsfdfagbcbcv",
-//     text: "fdsfs"
+//     title: "How to win at wrestling your brother",
+//     text: "Bite his tail, obv!"
 // }, function(error, dbPost){
 //         if(error){
 //             console.log(error)
